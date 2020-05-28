@@ -12,4 +12,4 @@ Implementation details: describe the implementation details here (language, libr
 
 List papers that give you comparable results and that you'll compare your results to.
 
-Is this todo for all of us? Or just me
+
