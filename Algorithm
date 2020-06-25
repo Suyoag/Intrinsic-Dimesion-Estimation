@@ -1,0 +1,20 @@
+GDIMENSION(Sn, r1, r2, ε)
+for l ← 1 to ∞ do
+Permute Sn randomly
+for k ← 1 to 2 do C ← 0/
+􏰅
+μ(L2)−μ(L1)
+for i ← 1 to n do
+for j←1to|C|do
+ifd􏰁Sn[i],C[j]􏰂<rk then j←n+1
+if j<n+1then
+C ← C ∪{Sn[i]}
+L􏰅 [l]=log|C| k
+􏰅􏰅
+Dpack = −
+if l > 10 and 1.65 √σ2(L􏰅 )+σ2(L􏰅 ) < D􏰅
+􏰅
+ logr −√logr 21
+12
+∗(1−ε)/2 then
+  return Dpack
