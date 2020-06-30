@@ -1,8 +1,4 @@
-# PACKINGDIMENSION(Sn, r1, r2, )
-# for l ← 1 to ∞do
-# Permute Sn randomly
-# for k ← 1 to 2 do
-# C ← 0 empty set
+
 # for i ← 1 to n do
 # for j←1to|C|do
 # if d(Sn[i],C[j])􏰂<rk then
