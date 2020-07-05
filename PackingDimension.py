@@ -22,6 +22,7 @@ def calculator_dimension(r1, r2, Sn, e):
                         j= snlength + 1
                     if j<n+1
                         C= "c U (sn(i))"
+        if l > 1.65
                 
                         
 
