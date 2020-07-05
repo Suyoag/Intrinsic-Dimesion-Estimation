@@ -16,7 +16,7 @@ def calculator_dimension(r1, r2, Sn, e):
         perm = permutations(Sn)
         for k in range(1, 2):
             c = set()
-            for i in range (1, Snlength):
+            for i in range (1, len(Sn)):
                 for j in range (1, abs(c)):
                     if "d(sn[i], C[j]) < rk"
                         j= snlength + 1
