@@ -9,6 +9,7 @@
 # Dpack=-µ (L2)- µ (L1)/logr2-logr1
 # If l > 10 and 1.65 (sqrt(sigma^2*L1)+sigma^2(l2))/sqrt(l(logr2-logr1))< dpack*(1-e)/2 then
 #	Return Dpack
+import statistics
 def calculator_dimension(r1, r2, Sn, e):
     SnLength = len(Sn)
     for l in range (1,9999999):
