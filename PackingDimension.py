@@ -23,7 +23,7 @@ def calculator_dimension(r1, r2, Sn, e):
                         C= c.union(sn(i))
                 L(l)=math.log(abs(c))
             Dpack= statistics.mean(L(l))- statistics.mean(L(l))/math.log(r2)-math.log(r1)
-        if l > 10 and 1.65*math.sqrt(variance(L1)+variance(L2))/math.sqrt(l)*(math.log(r2)-math.log(r1))<Dpack*(1-e)/2                   
+            if l > 10 and 1.65*math.sqrt(variance(L1)+variance(L2))/math.sqrt(l)*(math.log(r2)-math.log(r1))<Dpack*(1-e)/2                   
     return (Dpack)
 
 
