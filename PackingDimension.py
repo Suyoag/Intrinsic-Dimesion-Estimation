@@ -1,6 +1,3 @@
-
-# for i ← 1 to n do
-# for j←1to|C|do
 # if d(Sn[i],C[j])􏰂<rk then
 # j←n+1
 # if j<n+1then
