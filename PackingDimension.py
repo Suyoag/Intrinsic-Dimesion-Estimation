@@ -17,7 +17,7 @@ def calculator_dimension(r1, r2, Sn, e):
             c = set()
             for i in range (1, len(Sn)):
                 for j in range (1, abs(c)):
-                    if "d(sn[i], C[j]) < rk"
+                    if "math.distance"
                         j= snlength + 1
                     if j<n+1
                         C= c.union(sn(i))
