@@ -30,3 +30,20 @@ def calculator_dimension(r1, r2, Sn, e):
 
 
 calculator_dimension()
+
+import statistics
+import random
+import math
+from math import hypot
+from itertools import permutations
+from statistics import variance
+
+Sn = [3,4,5,6]
+
+def dis2(x1, y1, x2, y2):
+    dist = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+    print("distance is", dist)
+    print("hello")
+
+
+dis2(random.choice(Sn), random.choice(Sn), random.choice(Sn), random.choice(Sn))
