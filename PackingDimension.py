@@ -1,14 +1,13 @@
-# if d(Sn[i],C[j])􏰂<rk then
-# j←n+1
-# if j<n+1then
-# C ← C ∪{Sn[i]}
-# Lk(l)=log|C|
-# Dpack=-µ (L2)- µ (L1)/logr2-logr1
-# If l > 10 and 1.65 (sqrt(sigma^2*L1)+sigma^2(l2))/sqrt(l(logr2-logr1))< dpack*(1-e)/2 then
-#	Return Dpack
+
 import statistics
 import math
 from statistics import variance
+def dis2(X, Y):
+    dist = math.dist([X], [Y])
+    return dist
+
+dis2(random.choice(Sn), random.choice(Sn))
+
 def calculator_dimension(r1, r2, Sn, e):
     X= Sn(i)
     Y= C(j)
@@ -19,7 +18,7 @@ def calculator_dimension(r1, r2, Sn, e):
             c = set()
             for i in range (1, len(Sn)):
                 for j in range (1, abs(c)):
-                    if math.dist([X], [Y]) < rk
+                    if dist < rk
                         j= len(Sn)+ 1
                     if j<n+1
                         C= c.union(Sn(i))
@@ -31,19 +30,3 @@ def calculator_dimension(r1, r2, Sn, e):
 
 calculator_dimension()
 
-import statistics
-import random
-import math
-from math import hypot
-from itertools import permutations
-from statistics import variance
-
-Sn = [3,4,5,6]
-
-def dis2(x1, y1, x2, y2):
-    dist = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
-    print("distance is", dist)
-    print("hello")
-
-
-dis2(random.choice(Sn), random.choice(Sn), random.choice(Sn), random.choice(Sn))
