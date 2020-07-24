@@ -19,9 +19,7 @@ def calculator_dimension(r1, r2, Sn, e, distance):
                         j = len(Sn) + 1
                     if j < len(Sn) + 1:
                         C = c.union(random.choice(Sn))
-                L3 = math.log(abs(c))
-                L2 = [88, 42, 43]
-                L1 = [78, 51, 86]
+                Lk = math.log(abs(c))
             Dpack = statistics.mean(L2) - statistics.mean(L1) / math.log(r2) - math.log(r1)
             if l > 10 and 1.65 * math.sqrt(variance(L1) + variance(L2)) / math.sqrt(l) * (
                     math.log(r2) - math.log(r1)) < Dpack * (1 - e) / 2:
