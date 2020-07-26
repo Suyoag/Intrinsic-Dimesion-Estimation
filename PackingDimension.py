@@ -15,7 +15,7 @@ def calculator_dimension(r1, r2, Sn, e, distance):
             c = set()
             for i in range(1, len(Sn)):
                 for j in range(1, abs(c)):
-                    if distance < 10:
+                    if distance < r1 or r2:
                         j = len(Sn) + 1
                     if j < len(Sn) + 1:
                         C = c.union(random.choice(Sn))
