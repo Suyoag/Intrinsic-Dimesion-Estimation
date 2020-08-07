@@ -5,7 +5,6 @@ from statistics import variance
 def dis2(X, Y):
     dist = math.dist([X], [Y])
     return dist
-
 dis2(random.choice(Sn), random.choice(Sn))
 def calculator_dimension(r1, r2, Sn, e, distance):
     Sn = [1, 2, 3, 4, 5]
