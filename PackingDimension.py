@@ -2,7 +2,36 @@ import sys
 import statistics
 import math
 from statistics import variance
-def dis2(X, Y):
+from PIL import Image
+im = Image.open("lena.ppm")
+from __future__ import print_function
+import os, sys
+from PIL import Image
+
+for infile in sys.argv[1:]:
+    f, e = os.path.splitext(infile)
+    outfile = f + ".jpg"
+    if infile != outfile:
+        try:
+            Image.open(infile).save(outfile)
+        except IOError:
+            print("cannot convert", infile)
+           from __future__ import print_function
+import os, sys
+from PIL import Image
+
+size = (128, 128)
+
+for infile in sys.argv[1:]:
+    outfile = os.path.splitext(infile)[0] + ".thumbnail"
+    if infile != outfile:
+        try:
+            im = Image.open(infile)
+            im.thumbnail(size)
+            im.save(outfile, "JPEG")
+        except IOError:
+            print("cannot create thumbnail for", infile)
+def dis2(X, Y)
     dist = math.dist([X], [Y])
     return dist
 dis2(random.choice(Sn), random.choice(Sn))
