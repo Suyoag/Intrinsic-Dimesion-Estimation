@@ -2,35 +2,35 @@ import sys
 import statistics
 import math
 from statistics import variance
+ load and show an image with Pillow
 from PIL import Image
-im = Image.open("lena.ppm")
-from __future__ import print_function
-import os, sys
+# Open the image form working directory
+image = Image.open('kolala.jpeg')
+# summarize some details about the image
+print(image.format)
+print(image.size)
+print(image.mode)
+# show the image
+load_image.show()
+
 from PIL import Image
+from numpy import asarray
+# load the image
+image = Image.open('kolala.jpeg')
+# convert image to numpy array
+data = asarray(image)
+print(type(data))
+# summarize shape
+print(data.shape)
 
-for infile in sys.argv[1:]:
-    f, e = os.path.splitext(infile)
-    outfile = f + ".jpg"
-    if infile != outfile:
-        try:
-            Image.open(infile).save(outfile)
-        except IOError:
-            print("cannot convert", infile)
-           from __future__ import print_function
-import os, sys
-from PIL import Image
+# create Pillow image
+image2 = Image.fromarray(data)
+print(type(image2))
 
-size = (128, 128)
-
-for infile in sys.argv[1:]:
-    outfile = os.path.splitext(infile)[0] + ".thumbnail"
-    if infile != outfile:
-        try:
-            im = Image.open(infile)
-            im.thumbnail(size)
-            im.save(outfile, "JPEG")
-        except IOError:
-            print("cannot create thumbnail for", infile)
+# summarize image details
+print(image2.mode)
+print(image2.size)
+print(data)
 def dis2(X, Y)
     dist = math.dist([X], [Y])
     return dist
